@@ -1,0 +1,15 @@
+didnt Include:
+unchanged files, made copy to change wo/affecting repo for now.
+also copies made for those needed for labs.
+Already Passed Unreplicated; if already passed module before creation of this folder.
+very comfortable modules, no need to replicate and organize.
+
+to cover:
+ajax, android, websecurity?
+
+might not need l8r:
+threads/sockets, cgi, html5, promise/async, servlets?, stateexamples?, 
+
+have:
+see fromGH contents
+js stuff, node stuff, 
