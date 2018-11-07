@@ -1,0 +1,4 @@
+sessionStorage vs cookie
+
+cookie -- 'User Pref'
+session storage -- see notes -- not permenant.

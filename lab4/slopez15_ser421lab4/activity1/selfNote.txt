@@ -1,0 +1,10 @@
+I am assuming 
+	3 distinct words is 3 distinct words in 1 search (not 3 searches.)
+	"complete page" = is when you (ctrl+s) save file localy.
+		includes page's resources; images, scripts, styling, etc.
+	"source" = just means HTML and references to resources. (right-click "view source")
+		
+Work done so far....
+	all.
+	copy+pasted modified by right click html tag, edit html.
+

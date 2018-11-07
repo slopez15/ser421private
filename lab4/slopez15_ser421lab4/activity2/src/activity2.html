@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>activity2</title>
+</head>
+
+<body>
+  <!-- place dialogue between user and Eliza here. -->
+  <div id="dialogue">
+    <h3>Dialogue:</h3>
+    <p id="dialogue p">...</p>
+  </div>
+  <div class="talk">
+
+    <!-- <form name="Eliza"> -->
+      <!-- no action, we want to exec javascript within same page; action="#" -->
+      Input: <input type="text" name="userInput" value="" id="userInput"></center>
+      <input type="submit" onclick="app.generateResponse( document.getElementById('userInput').value )">
+      <!-- size="50" -->
+    <!-- </form> -->
+
+  </div>
+</body>
+
+<!-- assuming if sent over to client first time, can't send json, ithink. So maybe send as js. Prepped before activity2.
+  Also, can only send html with required resources as mentioned in html file like images, scripts, styling.
+  IMPORTANt:
+  some js files require other js files and web does not have 'require' keyword to require other js files.
+    For this reason, I need them loaded via html file beforehand.
+    limitation: must be chain/sequence of 'require's not a web of 'require's
+-->
+<script type="text/javascript" src="./data/defaultData.js"></script>
+<!-- <script type="text/javascript" src="./data/userData.js"></script> -->
+
+<script src="responseGenerator.js" type="text/javascript"></script>
+<script src="activity2.js" type="text/javascript"></script>
+
+</html>

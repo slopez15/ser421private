@@ -1,0 +1,2 @@
+For populating random json data: https://www.json-generator.com/
+json data: localStorages

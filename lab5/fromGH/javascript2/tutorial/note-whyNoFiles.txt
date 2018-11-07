@@ -1,0 +1,2 @@
+I made some physical notes behind DOM/JS notes.
+I would refer to ungraded ICA and ICA 7 (was ungraded to graded), I practiced lots there and have solutions that are in variety and notes to them. Notes included prefered methods and why (pros/cons).

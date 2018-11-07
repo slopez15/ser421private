@@ -1,0 +1,11 @@
+{
+  "name": "slopez15_ser421lab4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saul Lopez",
+  "license": "ISC",
+  "description": ""
+}
