@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Calc</title>
+	</head>
+	<body>
+		Current Calculator Value: <%= calcValue %>
+		<br><br>
+		<form>
+			<input type='text' placeholder="number" name='number'/>		
+			<br><br>
+			<input type='submit' value='add' formaction='/add' formmethod='post' />
+			<input type='submit' value='subtract' formaction='/subtract' formmethod='post' />
+			<input type='submit' value='pop' formaction='/pop' formmethod='post' />
+		</form>
+		<a href='/reset'><input type='button' value='reset' /></a>
+		<br><br>
+		Past Opperations:
+		<!-- EJS template code referenced from main page: http://ejs.co -->
+		<% for(var i = opStack.length-1; i >= 0; i--) { %>
+		<br>
+		<%= opStack[i].operation %>, 
+		<%= opStack[i].operand %>,
+		<%= opStack[i].ip %>,
+		<%= opStack[i].user %>
+		<% } %>
+	</body>
+</html>
