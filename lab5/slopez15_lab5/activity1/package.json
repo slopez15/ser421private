@@ -1,0 +1,19 @@
+{
+  "name": "activity1",
+  "version": "1.0.0",
+  "description": "This package.json is specifically for activity 1 and will have its own scripts.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ./src/server && node main-lab3act1-base.js ",
+    "echo": "echo 'sup act1' ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "ejs": "^2.6.1"
+  }
+}

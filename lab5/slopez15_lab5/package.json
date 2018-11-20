@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "activity1": "cd ./activity1/ && npm run start ",
+    "activity2": "cd ./activity2/ && npm run start ",
+    "base": "cd ./lab3act1/ && node ./lab3act1.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Saul Lopez",
   "license": "ISC"
 }

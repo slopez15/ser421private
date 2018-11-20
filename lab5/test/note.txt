@@ -1,0 +1,1 @@
+try making 2 servers via node and attempt jsonp for practice at some point.
