@@ -41,7 +41,9 @@ app.locals.opStack = [];
 // Scripts have Ajax calls to server API to get data, and scripts will manipulate for DOM manipulation.
 // Unlike, calc base where each server route will provide a new whole html page formatted based on data. (eg. render views and view controller in server.)
 // 	So, no view render should exist in server. Just provide one static html w/ scripts (see 1st sentence).
-/*
+
+//in submission: commented wrong code!
+/**/
 app.get('/', function(req, res) {
 	//redirect method
 	res.status(307); //temp redirect; until find better way to send client html via '/' path. //303 - see other. 301 - Moved Permanently, 302 Found,
@@ -49,6 +51,7 @@ app.get('/', function(req, res) {
 });
 /**/
 
+/*
 app.get('/', function(req, res) {
 	app.render('main.html', function(error, data) {
 		res.set({'Cache-Control': 'no-cache, no-store'});
@@ -57,7 +60,7 @@ app.get('/', function(req, res) {
 		res.send(data);
 	});
 });
-
+/**/
 
 
 
