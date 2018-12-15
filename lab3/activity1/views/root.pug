@@ -1,0 +1,33 @@
+extends main_pug
+block content
+  h1 Welcome!
+  h2 Use my calculator service and below are some calculator info.
+
+  h3 Current Value
+  p The current value of a calculator (0 when it first starts)
+  p current value:
+  p
+    i #{currentValue}
+
+  h3 Form
+  p
+    | A simple web form that accepts input of a number with options to “Add” “Subtract” or “Pop”
+  form(action='/redirect', method='post')
+    label(for='number') number
+    input(type='text', name='operand', required, pattern="[0-9]+")
+    br
+    label(for='add') add
+    input(type='radio', name='operation', value='add', required)
+    label(for='subtract') subtract
+    input(type='radio', name='operation', value='subtract', required)
+    label(for='pop') pop
+    input(type='radio', name='operation', value='pop', required)
+    br
+    input(type="submit" value="submit")
+
+  h3 Stack View
+  p A stack view of the history of the operations applied to the calculator.
+  p stack view:
+  p
+    i #{stackView}
+    //TODO: I couldn't print stack neatly. or with <br/> or with PUG's iteration.

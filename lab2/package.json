@@ -1,0 +1,19 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "Explanation of the NewsService as requested in Activity 2:\r no UI, but API for object types in README.txt",
+  "main": "NewsService.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stop": "taskkill -F -IM node.exe",
+    "start": "node D:\\zProgramming\\CLASSES\\ser421-webapp-moblSys\\labs-assigns\\lab2\\activity2\\mainService.js",
+    "act3": "node D:\\zProgramming\\CLASSES\\ser421-webapp-moblSys\\labs-assigns\\lab2\\activity3\\activity3.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xml-formatter": "^1.0.1",
+    "xml2json": "^0.11.2",
+    "xmldom": "^0.1.27"
+  }
+}

@@ -1,0 +1,19 @@
+extends main_pug
+block head
+  head
+    title="match - rankedList"
+block content
+  if username
+    Best survey matches for #{username} best-to-worst:
+  else
+    Best survey matches best-to-worst:
+  //- var matches = [{user: "u", amountMatched: 1}]
+  if matches
+    ol
+      for match in matches
+        li User: #{match.user} matched #{match.amountMatched} answers
+  else
+    if username
+      p There were no matches for #{username}.
+    else
+      p There were no matches.

@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "question": "Do you like SE?",
+      "possibleAnswers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question": "Do you like working alone?",
+      "possibleAnswers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question": "Do you like programming?",
+      "possibleAnswers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question": "fav color?",
+      "possibleAnswers": [
+        "blue",
+        "red",
+        "green"
+      ]
+    }
+  ]
+}

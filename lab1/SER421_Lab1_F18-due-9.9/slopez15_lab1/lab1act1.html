@@ -1,0 +1,61 @@
+<!--
+  Name: Saul Lopez
+  asurite: slopez15
+  class: 421
+  date: 9/4/2018
+-->
+<!DOCTYPE html>
+<!-- Form -->
+<form action="http://lead1.poly.asu.edu/cgi-bin/cgiquery.pl" method="get">
+   <!-- 12 html5 input types from https://www.w3schools.com/html/html_form_input_types.asp -->
+   Select your favorite color: <br />
+   <input type="color" name="slopez15_color" value="#ff0000">
+   <br />
+   <!-- DONE. 1.	Specify a min date of January 1, 2010 and a max date of September 1, 2017 on your Date input -->
+   Date:<br />
+   <input type="date" name="slopez15_date" value="2010-01-01" min="2010-01-01" max="2017-09-01">
+   <br />
+   Datetime-local (date and time):<br />
+   <input type="datetime-local" name="slopez15_datetime-local" value="2018-08-29T08:26">
+   <br />
+   E-mail:<br />
+   <input type="email" name="slopez15_email" value="slopez@asu.edu">
+   <br />
+   Month (month and year):<br />
+   <input type="month" name="slopez15_month" value="2018-08">
+   <br />
+   <!-- DONE 4.	Specify a default value of 100 in your number input. -->
+   Number:<br />
+   <input type="number" name="slopez15_number" value="100">
+   <br />
+   <!-- DONE. 2.	Specify a min of -10 and a max 10 on your range input -->
+   Range:<br />
+   <input type="range" name="slopez15_range"  value="0" min="-10" max="10">
+   <br />
+   Search:<br />
+   <input type="search" name="slopez15_search" value="searchingSomething">
+   <br />
+   Telephone:<br />
+   <input type="tel" name="slopez15_tel" value="1234567890">
+   <br />
+   Select a time:<br />
+   <input type="time" name="slopez15_time" value="08:28">
+   <br />
+   Add your URL:<br />
+   <input type="url" name="slopez15_url" value="https://www.google.com/">
+   <br />
+   Select a week:<br />
+   <input type="week" name="slopez15_week" value="2018-W35">
+   <br />
+   <!-- 13th input with input validation-->
+   Routing number:<br />
+   <input type="text" name="slopez15_RTN"  value="123456789 000987654321 1234" size="27" pattern="[0-9]{9}\s[0-9]{12}\s[0-9]{4}"
+      title="enter 9-digit routing number, 12-digit account number, and 4-digit check number.
+      All 3 numbers must be digits only.
+      All 3 must be fixed length; leading zeros if needed to meet the fixed length, and
+      have a single space between them.">
+   <br />
+   <!-- just an extra submit for submiting the form. -->
+   <input type="submit" value="submit">
+   <br />
+</form>

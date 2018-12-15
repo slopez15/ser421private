@@ -1,0 +1,150 @@
+<!-- PART A -->
+<!-- http://www.w3schools.com/html/html_form_input_types.asp  -->
+<!--
+HTML form that includes each of these new **HTML5** input types (from site above).
+put each input on own line and labeled with the type name, one element per line (<br/>), e.g.
+**W3schools lists 12 new input types.**
+action: http://lead1.poly.asu.edu/cgi-bin/cgiquery.pl
+method: GET
+name attribute of each input element: <asurite>_<typename>.
+  ex:
+  <asurite>_<typename>
+    asurite= kgary
+    type name=color
+  kgary_color,
+  kgary_date,
+  kgary_datetime_local,
+  etc.
+-->
+
+<!-- PART B -->
+<!-- http://www.w3schools.com/html/html_form_input_types.asp  -->
+<!--
+Same page summarizes input restriction; it has other new attributes.
+ex: min, max, pattern, required, and step
+With these attributes, do the following:
+1.	Specify a min date of January 1, 2010 and a max date of September 1, 2017 on your Date input
+2.	Specify a min of -10 and a max 10 on your range input
+3.	Make sure all of the input elements must be filled in (value attrib?)
+4.	Specify a default value of 100 in your number input
+-->
+<form action="http://lead1.poly.asu.edu/cgi-bin/cgiquery.pl" method="get">
+
+  Select your favorite color: <br />
+  <input type="color" name="slopez15_color" value="#ff0000">
+  <br />
+
+<!-- DONE. 1.	Specify a min date of January 1, 2010 and a max date of September 1, 2017 on your Date input -->
+  Date:<br />
+  <input type="date" name="slopez15_date" value="2010-01-01" min="2010-01-01" max="2017-09-01">
+  <br />
+
+  Datetime-local (date and time):<br />
+  <input type="datetime-local" name="slopez15_datetime-local" value="2018-08-29T08:26">
+  <br />
+
+  E-mail:<br />
+  <input type="email" name="slopez15_email" value="slopez@asu.edu">
+  <br />
+
+  Month (month and year):<br />
+  <input type="month" name="slopez15_month" value="2018-08">
+  <br />
+
+<!-- DONE 4.	Specify a default value of 100 in your number input. -->
+  Number:<br />
+  <input type="number" name="slopez15_number" value="100">
+  <br />
+
+<!-- DONE. 2.	Specify a min of -10 and a max 10 on your range input -->
+  Range:<br />
+  <input type="range" name="slopez15_range"  value="0" min="-10" max="10">
+  <br />
+
+  Search:<br />
+  <input type="search" name="slopez15_search" value="searchingSomething">
+  <br />
+
+  Telephone:<br />
+  <input type="tel" name="slopez15_tel" value="1234567890">
+  <br />
+
+  Select a time:<br />
+  <input type="time" name="slopez15_time" value="08:28">
+  <br />
+
+  Add your URL:<br />
+  <input type="url" name="slopez15_url" value="https://www.google.com/">
+  <br />
+
+  Select a week:<br />
+  <input type="week" name="slopez15_week" value="2018-W35">
+  <br />
+
+  Routing number:<br />
+  <input type="text" name="slopez15_RTN"  value="123456789 000987654321 1234" size="27" pattern="[0-9]{9}\s[0-9]{12}\s[0-9]{4}"
+  title="enter 9-digit routing number, 12-digit account number, and 4-digit check number.
+    All 3 numbers must be digits only.
+    All 3 must be fixed length; leading zeros if needed to meet the fixed length, and
+    have a single space between them.">
+  <br />
+
+<!--
+NOTE: EXAMPLE RESULT
+Query String Data:
+slopez15_color = #ff0000
+slopez15_date = 2010-01-01
+slopez15_datetime-local = 2018-08-01T03:21
+slopez15_email = slopez@asu.edu
+slopez15_month = 2018-08
+slopez15_number = 100
+slopez15_range = 6
+slopez15_search = searchingSomething
+slopez15_tel = 4804804800
+slopez15_time = 12:23
+slopez15_url = https://www.google.com/
+slopez15_week = 2018-W31
+slopez15_RTN = 123456789 000987654321 1234
+
+ -->
+  <!--
+  PART C (13): Next, create a 13th input element of type "text" intended to hold the numbers you typically see at the bottom of a check (see http://www.routingnumbers.org/).
+    Use the pattern attribute to create a custom validation for the combination of
+    9-digit routing number,
+    12-digit account number, and
+    4-digit check number (an example is shown on that web page).
+    25 digit total.
+    27 digit + 2 group space.
+  Constraints on the pattern:
+  1.	All 3 numbers must be all *digits*
+  2.	All 3 must be *fixed length*, with *leading 0s* if needed to meet the fixed length, and have a *single space between them*.
+  3.	The textbox must be lengthened to accommodate the entire string.
+  4.	Label the area "Routing number" on your HTML form and name the input element "<asurite>_RTN" (e.g. kgary_RTN)
+
+  NOTE: http://www.routingnumbers.org/
+  NOTE: you are only checking for a valid routing number input, not trying to fix user input. This should be implemented by the pattern, not by adding any Javascript (no Javascript allowed!).
+
+  All parts can go in this file.
+  **Save as: lab1act1.html.**
+   -->
+   <input type="submit" value="submit">
+   <br />
+
+</form>
+
+
+<!-- Extra Notes -->
+<!--
+Qs:
+between them <- the 3 grouped num or each digit.
+B3
+ -->
+<!-- -->
+<!-- wasnt in inital html5 list, but was beneath the html5 list -->
+<!-- File
+<form>
+  Select a file: <input type="file" name="slopez15_file">
+</form>
+<br />
+-->
+<!-- Input Restrictions; it was below number type in the url site. -->

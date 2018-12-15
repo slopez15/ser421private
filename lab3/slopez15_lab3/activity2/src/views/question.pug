@@ -1,0 +1,30 @@
+extends main_pug
+
+block content
+  //NOTE: variable not print if not exist.
+  if username
+    p Survey page: #{qNum} for user: #{username}
+  else
+    p Survey page: #{qNum} for user:
+      i unknown
+
+  form(method="POST" action="/survey/"+(qNum+1))
+    p #{question}
+    ul
+      each val in possibleAnswers
+        input(type="radio" name="answer" value=val required)
+        span #{val}
+        if preference == "vertical"
+          br
+    if qNum != "1"
+      button(type="submit" value="prev" formaction="/survey/"+(qNum-1) ) prev
+    if qNum != qAmount
+      button(type="submit" value="next") next
+    if qNum == qAmount
+      button(type="submit" value="done" formaction="/lastPage") submitSurvey
+  br
+  a(href="/preference") Set your rendering preferences
+
+
+  // options: Lancelot Arthur Guineviere
+  //[next] for 1st page, [prev,next] for others.

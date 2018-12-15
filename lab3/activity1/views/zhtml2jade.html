@@ -1,0 +1,23 @@
+<!-- extends main_pug
+block content -->
+  <h1>Welcome!</h1>
+  <h2>Use my calculator serrvice and below are some calculator info.</h2>
+
+  <h3>Current Value</h3>
+  <p>The current value of a calculator (0 when it first starts)</p>
+  <p>#{currentValue}</p>
+
+  <h3>Stack View</h3>
+  <p>A stack view of the history of the operations applied to the calculator.</p>
+  <p>#{stackView}</p>
+
+  <h3>Form</h3>
+  <p>A simple web form that accepts input of a number with options to “Add” “Subtract” or “Pop”</p>
+  <form action="/" method="post">
+    <label for="add">add</label>
+    <input type="radio" name="operation" value="add">
+    <label for="subtract">subtract</label>
+    <input type="radio" name="operation" value="subtract">
+    <label for="pop">pop</label>
+    <input type="radio" name="operation" value="pop">
+  </form>

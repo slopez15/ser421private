@@ -1,0 +1,9 @@
+See attached. 
+For the extra credit here is the 
+NodeJS MySQL driver page: 
+https://dev.mysql.com/downloads/connector/nodejs/
+
+lab1 part C solution 
+rename with 
+.js extension 
+to run in Node.

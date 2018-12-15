@@ -1,0 +1,14 @@
+extends main_pug
+block head
+  head
+    title="lastPage"
+block content
+  if (completedSurvey == false || completedSurvey == undefined)
+    p sorry not finished on time.
+    p please redirect to root page.
+    a(href="/") root
+  else
+    p Thanks for completing the survey!!!
+    p please redirect to root page.
+    a(href="/") root
+  //may not need else since js should redirect

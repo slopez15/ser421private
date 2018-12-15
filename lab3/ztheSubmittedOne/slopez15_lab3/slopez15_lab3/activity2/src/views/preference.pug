@@ -1,0 +1,14 @@
+extends main_pug
+block content
+  p What is your view preference?
+  form( method="POST" action="/survey/1" )
+    // TODO: action be last survey Q, but just did /survey/1 for now.
+    label(for="vertical") Vertical:
+    input(type="radio" name="preference" value="vertical")
+    br
+    label(for="horizontal") Horizontal:
+    input(type="radio" name="preference" value="horizontal")
+    br
+    input(type="submit" value="Submit")
+
+    //DONE for now. see action and todo.
